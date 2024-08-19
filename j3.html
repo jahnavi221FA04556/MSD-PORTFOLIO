@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image:url(https://www.starbackdrops.com/cdn/shop/products/SBH0321-5-7.png?v=1669787679&width=1946);
+background-size:cover;
+            
+        }
+
+        header {
+            background-color: #8e44ad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #662d8c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+            font-weight: bold;
+            text-shadow: 2px 2px #662d8c;
+        }
+
+        header p {
+            margin: 10px 0 20px;
+            font-size: 1.1em;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #8e44ad;
+            margin-right: 30px;
+        }
+
+        #about h3 {
+            margin-top: 0;
+            text-align: center; /* Centered Education heading */
+        }
+
+        #about ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #about ul h4 {
+            margin: 10px 0 5px;
+            text-align: center; /* Centered subheadings */
+        }
+
+        #about ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .skill-container {
+            margin: 20px 0;
+        }
+
+        .skill-bar {
+            position: relative;
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 25px;
+            margin: 10px auto;
+            height: 25px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 25px;
+            color: #fff;
+            background-color: #8e44ad;
+        }
+
+        .html { width: 90%; }
+        .css { width: 85%; }
+        .javascript { width: 80%; }
+        .python { width: 75%; }
+
+        #projects h2 {
+            text-align: center; /* Centered Projects heading */
+        }
+
+        .project {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project-bar {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .project img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .project-content {
+            width: 60%;
+        }
+
+        .project-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center; /* Centered project names */
+        }
+
+        .project-content h3 {
+            text-align: center; /* Centered project titles */
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #8e44ad;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #8e44ad;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #7a288a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8e44ad;
+            color: #fff;
+            border-top: 5px solid #662d8c;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JAHNAVI</h1>
+        <p>Hello! I am a passionate web developer with a background in computer science and engineering. I enjoy creating beautiful and functional websites.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="C:\Users\valet\OneDrive\Attachments\Desktop\PRO.jpg" alt="Profile Picture">
+        <div>
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <h4>Intermediate</h4>
+                    Bhavishya Jr College, Board of Intermediate Education, Andhra Pradesh <br> 2020 - 2022
+                </li>
+                <li>
+                    <h4>B Tech</h4>
+                    Vignan's University, Guntur <br> 2022 - 2026
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill html">90%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill css">85%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill javascript">80%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill python">75%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-bar">
+                <img src="C:\Users\valet\OneDrive\Desktop - Copy\hb.jpg" alt="Hotel Booking System">
+                <div class="project-content">
+                    <span class="project-number">Project 1:</span>
+                    <h3>Online Hotel Booking System</h3>
+                    <p>This system provides a platform for real-time, user-friendly hotel booking. It includes features such as room availability checking, booking management, and payment processing, aiming to enhance the user experience with a seamless interface and reliable performance.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-bar">
+                <img src="C:\Users\valet\OneDrive\Attachments\Desktop\ag.jpg">
+                <div class="project-content">
+                    <span class="project-number">Project 2:</span>
+                    <h3>Agriculture Selling Product System</h3>
+                    <p>This platform connects farmers directly with consumers
+
+, enabling easy transactions for agricultural products. It features product listings, search functionality, and a secure payment gateway to facilitate smooth sales and purchases, benefiting both sellers and buyers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+    <div class="project-bar">
+        <img src="C:\Users\valet\OneDrive\Attachments\Desktop\wal.jpeg">
+        <div class="project-content">
+            <span class="project-number" style="display: block; text-align: center;">Project 3:</span>
+            <h3 style="text-align: center;">Walmart Sales Prediction</h3>
+            <p style="text-align: center;">A machine learning model designed to predict Walmart sales based on historical data. It utilizes various data analysis techniques to forecast future sales trends, providing valuable insights for inventory management and strategic planning.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="https://github.com/Mahesh">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/mukkala-chandrika">LinkedIn</a></li>
+            </ul>
+            <p>&copy; 2024 Jahnavi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
